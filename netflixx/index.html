@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+    <link rel="stylesheet" href="s.css">
+    <script src="c.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="nav_left">
+                <a href="index.html">
+                    <img src="2.png" alt="" class="nav_logo">
+                </a>
+            </div>
+            <div class="nav_right">
+                <img src="11.jpeg" class="nav_avatar" alt="">
+            </div>
+        </div>
+        <div id="banner">
+            <div id="banner_contents">
+                <h1 id="banner_title"></h1>
+                <div id="banner_buttons">
+                    <button class="banner_button">Play</button>
+                    <button class="banner_button">My List</button>
+                </div> 
+                <p id="banner_description"></p>
+            </div>
+            <div id="banner_fadeBottom"></div>
+        </div>
+    </div>
+
+    <div id="headrow">
+        <!-- Rows will be dynamically injected here -->
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const nav = document.querySelector(".nav");
+            nav.classList.toggle("active", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
