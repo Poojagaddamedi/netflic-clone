@@ -1,1 +1,1 @@
-# netflic-clone
+# netfliX-clone
